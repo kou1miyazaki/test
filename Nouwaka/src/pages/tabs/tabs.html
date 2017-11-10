@@ -1,0 +1,35 @@
+       
+<ion-content no-padding>
+  <ion-row class="row-global">
+    <!-- tabbar-->
+    <ion-col col-3 class="col-tabbar">
+      <div class="left_button left_button_top">
+
+      </div>
+      <div class="left_button left_button_mid">
+          
+      </div>
+      <button class="left_button left_button_bot" (click)="settingPage()">
+        <img class="title_img setting_title_img" src="assets/image/NowakaButton/setting-title.png">
+      </button>
+      <button class="right_button right_button_chatmode" (click)="chatPage()" [ngStyle]="{'background-color': chatpage }">
+          <img class="title_img" src="assets/image/NowakaButton/chatmode_title.png">
+      </button>
+      <button class="right_button right_button_playlist" (click)="playlistPage()" [ngStyle]="{'background-color': playlistpage }">
+        <img class="title_img" src="assets/image/NowakaButton/contentlist_title.png">
+      </button>
+      <button class="right_button right_button_userlist" (click)="userlistPage()" [ngStyle]="{'background-color': userlistpage }">
+        <img class="title_img" src="assets/image/NowakaButton/userlist_title.png">
+      </button>
+      <div class="right_button right_button_none">
+          
+      </div>
+    </ion-col>
+    <!-- end tabbar-->
+    <!-- content-->
+    <ion-col>
+      <ion-nav [root]="rootPage"></ion-nav>
+    </ion-col>
+    <!-- end content-->
+  </ion-row>
+</ion-content>

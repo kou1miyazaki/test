@@ -1,0 +1,33 @@
+<ion-content>
+<div class="top-div">
+  <div class="right" (click)="onDismiss()">
+    <p class="close-label">閉じる</p>
+    <img class="close-icon" src="assets/image/ic_close.png" />
+  </div>
+</div>
+
+  <ion-slides (ionSlideDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let index of indexes">
+      <h1>Slide {{ index + 1 }}</h1>
+    </ion-slide>
+  </ion-slides>
+
+
+  <ion-item class="slide-btn-wrapper" no-lines>
+
+    <img id="pre-btn" class="pre-btn" src="../assets/image/ic_left.png" (click)="onSlidePrevious()" *ngIf="currentIndex != minIndex">
+
+    <img id="next-btn" class="next-btn" src="../assets/image/ic_right.png" (click)="onSlideNext()" *ngIf="currentIndex != maxIndex">
+
+  </ion-item>
+
+
+  <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col col-auto *ngFor="let index of indexes">
+        <div id="circle {{index}}" class="circle"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

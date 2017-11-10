@@ -1,0 +1,18 @@
+contents-sorting-order-popover {
+  .title-item {
+    color: #0095D9;
+    text-align: right;
+  }
+
+  ion-list {
+    margin-left: 40px !important;
+    width: 300px !important;
+  }
+}
+.custom-userSortContent-popover {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 20px 20px;
+}

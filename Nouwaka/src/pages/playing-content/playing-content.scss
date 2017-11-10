@@ -1,0 +1,49 @@
+page-playing-content {
+  .toolbar-ios {
+    min-height: 80px;
+  }
+
+  .toolbar-background-ios {
+    background: #FFFFFF;
+  }
+
+  .full-size {
+    width: 100%;
+    height: 100%;
+    background: url("assets/image/bannerGamePlay.png") no-repeat center;
+    background-size: cover;
+  }
+
+  .bottom-page {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+  }
+
+  [padding] .scroll-content {
+    padding: 0px !important;
+  }
+
+  .bar-button-ios[icon-only] ion-icon {
+    padding: 0 0.1em;
+    font-size: 2.2em;
+    line-height: .67;
+    pointer-events: none;
+  }
+
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: lightgray;
+    background-color: transparent;
+  }
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: lightgray;
+    pointer-events: auto;
+  }
+}

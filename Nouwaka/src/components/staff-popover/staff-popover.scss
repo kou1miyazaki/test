@@ -1,0 +1,123 @@
+staff-popover {
+  .bound-popover {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .searchbar-ios {
+    padding: 30px 25px;
+    min-height: 44px;
+    border-top: 0.55px solid transparent;
+    border-bottom: 0.55px solid rgba(0, 0, 0, 0.05);
+    background-color: white;
+  }
+
+  .item-ios ion-avatar ion-img,
+  .item-ios ion-avatar img {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+
+  .item-ios {
+    width: auto;
+    padding-left: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 0;
+    position: relative;
+    font-size: 1.7rem;
+    color: #000;
+    background-color: #fff;
+    -webkit-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+  }
+
+  .list-ios .item-block .item-inner {
+    border-bottom: 0px solid #c8c7cc !important;
+  }
+
+  .cached-padding-item {
+    height: 20%;
+  }
+
+  .title {
+    height: 30%;
+    font-size: 20px;
+    color: gray;
+  }
+
+  .sub-title {
+    height: 50%;
+    font-size: 20px;
+    color: gray;
+  }
+
+  .padding-top-list {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 1px;
+    background-color: gray;
+  }
+
+  .label-ios {
+    margin: 0px;
+  }
+
+  .list-ios {
+    margin: 0px;
+  }
+
+  .full-row-size {
+    width: 100%;
+    height: 100%;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: 0px solid #c8c7cc;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .searchbar-ios .searchbar-input {
+    padding-top: 0px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 25px;
+    border: 2px solid gray;
+    height: 5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #000;
+    background-color: #eaeaea;
+    text-align: center;
+  }
+
+  .searchbar-ios .searchbar-search-icon {
+    left: 9px;
+    top: 9px;
+    background-image: none;
+    margin-left: calc(50% - 60px);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 13px;
+  }
+
+  ion-list {
+    width: 600px !important;
+    left: 200px;
+  }
+}
+
+.custom-staff-popover {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}

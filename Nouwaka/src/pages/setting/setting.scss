@@ -1,0 +1,28 @@
+page-setting {
+  .content-footer {
+    height: 50%;
+    border-top: 1px solid #e2dfdf;
+  }
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 600;
+    color: #fff;
+    pointer-events: auto;
+  }
+
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+
+  @media #{$ipad_9-7} {
+  }
+}

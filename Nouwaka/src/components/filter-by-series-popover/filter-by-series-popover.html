@@ -1,0 +1,7 @@
+<!-- Generated template for the FilterBySeriesPopoverComponent component -->
+<div class="custom-seiresFilter-popover">
+  <ion-list>
+    <ion-item class="title-item">キャンセル</ion-item>
+    <button ion-item *ngFor = "let item of callback"(click)="goToDetails(item)">{{item.SeriesName}}</button>
+  </ion-list>
+</div>

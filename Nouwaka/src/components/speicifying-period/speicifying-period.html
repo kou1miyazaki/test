@@ -1,0 +1,36 @@
+<!-- Generated template for the SpeicifyingPeriodComponent component -->
+<ion-header>
+
+  <ion-navbar>
+
+    <ion-title style="text-align:center;background-color:forestgreen"><p style="color:white">期間指定</p></ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ 
+  <ion-row>
+    <ion-col col3 style="text-align:center">
+      <button ion-button color="light" class="startDatebtn" (click)="showCalendar()">Light</button>
+      <!--<span ion-datepicker
+      [(value)]="initDate"
+      [disabledDates]="disabledDates"
+      locale="ja-JP"
+      clear
+      class="ScheduleDate">
+       <span>{{initDate | date}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
+     </span>-->
+    </ion-col>
+    <ion-col col3>
+      <button ion-button color="light" class="startDatebtn">Light</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+
+<ion-footer>
+    <button ion-button style="width:100%;height:20px">Default</button>
+</ion-footer>

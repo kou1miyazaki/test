@@ -1,0 +1,37 @@
+<!--
+  Generated template for the NoAhPlayingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content no-padding>
+    <ion-grid style="background-color: rgb(124, 168, 3)">
+        <ion-row justify-content-center>
+          <ion-col>
+            <div>Header</div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  <ion-slides (ionSlideDidChange)="onSlideChanged()">
+    <ion-slide *ngFor="let index of indexes">
+      <h1>Slide {{ index + 1 }}</h1>
+    </ion-slide>
+  </ion-slides>
+
+
+  <ion-item class="slide-btn-wrapper" no-lines>
+
+    <img id="pre-btn" class="pre-btn" src="../assets/image/ic_left.png" (click)="onSlidePrevious()" *ngIf="currentIndex != minIndex">
+
+    <img id="next-btn" class="next-btn" src="../assets/image/ic_right.png" (click)="onSlideNext()" *ngIf="currentIndex != maxIndex">
+
+  </ion-item>
+
+  <ion-grid style="background-color: rgb(173, 172, 172)">
+    <ion-row justify-content-center>
+      <ion-col col-auto *ngFor="let index of indexes">
+        <div id="circle {{index}}"></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

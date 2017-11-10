@@ -1,0 +1,78 @@
+<ion-content no-padding>
+  <ion-row class="content-header">
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverUserSort($event)" class="custom-filter-button">利用者ソートリスト<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverStaff($event)" class="custom-filter-button">光岡眞里<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverFacility($event)" class="custom-filter-button">利用者ソートリスト<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-searchbar placeholder="検索" class="item-menu-center" (ionInput)="getItems($event) "></ion-searchbar>
+     
+    </ion-col>
+  </ion-row>
+  <ion-row class="content-content">
+      <ion-content>
+        <ion-list>
+          <!--First item-->
+          <ion-item class="item-list" *ngFor="let item of arraySearch">
+            <!--First item detail-->
+            <ion-row>
+              <ion-col col-2 class="margin-image">
+                <button class="user-detail-button" (click)="goToUserDetailPage(item.Id)">
+                  <img class="image-avatar" src="{{item.PhotoURL}}" />
+                </button>
+              </ion-col>
+              <ion-col col-5>
+                <!--Title-->
+                <h2 class="h2-style">{{item.UserName}}</h2>
+                <!--Content-->
+                <div class="item-content">
+                  <p class="item-content-devide">昭和18年12月24日（74歳・女性）</p>
+                  <p class="item-content-devide">デイサービス脳若 </p>
+                  <p class="item-content-devide">担当：藤田 徹郎</p>
+                </div>
+              </ion-col>
+
+              <ion-col col-3>
+                <!--Detail-->
+                <h2 class="h2-style"></h2>
+                <!--Array of star-->
+                <div class="item-content">
+                  <div class="item-title">
+                    <ion-icon name="md-heart" class="green-star-icon"></ion-icon>
+                    <ion-icon name="md-heart" class="green-star-icon"></ion-icon>
+                    <ion-icon name="md-heart" class="green-star-icon"></ion-icon>
+                  </div>
+                  <div class="item-content-sub">
+                    <!--Sub detail 1-->
+                    <p class="item-sub-devide">11/24(木)にプレイ</p>
+                    <p class="item-sub-devide">最新スコア： 74点</p>
+                  </div>
+                </div>
+              </ion-col>
+              <ion-col col-2>
+                <ion-row justify-content-center align-items-center class="full-row">
+                  <button ion-button full class="custom-button-play">
+                    <img src="/assets/image/touch.png" class="full-size"/>
+                  </button>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-row>
+    <ion-row class="content-footer">
+      <ion-col class="footer" ><a (click)="showUser()">ひと新規登録</a></ion-col>
+    </ion-row>
+</ion-content>

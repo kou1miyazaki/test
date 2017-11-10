@@ -1,0 +1,60 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content class="main-content" padding>
+  <ion-grid class="login-grid-full">
+    <ion-row justify-content-center>
+      <ion-col col-auto class="center">
+        <img class="login-logo" src="assets/logo/login_app_logo.png" />
+      </ion-col>
+    </ion-row>
+    <form #loginForm="ngForm" (ngSubmit)="onSubmitLogin()" autocomplete="on">
+      
+      <ion-row justify-content-right class="main-padding">
+        <ion-col col-7>
+          <ion-list inset>
+            
+            <ion-item class="input-wrapper">
+              <ion-label class="title-padding">メールアドレス</ion-label>
+              <ion-input id="email" type="email" placeholder="xxxxxx@example.com" [(ngModel)]="loginUser.email" name="email" class="input-border-email"></ion-input>
+            </ion-item>
+
+            <ion-item class="input-wrapper">
+              <ion-label class="title-padding">パスワード</ion-label>
+              <ion-input id="password" type="{{ isPasswordShown ? 'text' : 'password' }}" placeholder="パスワード" [(ngModel)]="loginUser.password" name="password" class="input-border-password"></ion-input>
+
+              <button ion-button item-end (click)="onShowPassword(); false" class="button-password">
+                {{isPasswordShown ? 'パスワードを表示' : 'パスワードを隠す'}}
+              </button>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+      <ion-row justify-content-center>
+          <ion-col col-auto>
+            <div class="hide-show-content-box">
+              <span id="error-messenger" class="error-message" hidden>{{errorType}}</span>
+            </div>
+          </ion-col>
+        </ion-row>
+
+      <ion-row justify-content-center>
+        <ion-col col-auto>
+          <button id="submit-button" class="submit-button" ion-button block type="submit">ログイン</button>
+        </ion-col>
+      </ion-row>
+    </form>
+
+    <ion-row justify-content-center>
+      <ion-col col-auto>
+        <a class="normal-a">パスワードを忘れた場合は</a><a> こちら</a>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

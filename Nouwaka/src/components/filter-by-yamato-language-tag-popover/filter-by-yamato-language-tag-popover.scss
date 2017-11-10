@@ -1,0 +1,18 @@
+filter-by-yamato-language-tag-popover {
+  .title-item {
+    color: #0095D9;
+    text-align: right;
+  }
+
+  ion-list {
+    width: 300px !important;
+  }
+}
+
+.custom-languageFilter-popover {
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  border-radius: 20px 20px;
+}

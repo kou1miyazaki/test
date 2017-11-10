@@ -1,0 +1,422 @@
+page-user-list {
+
+  .content-show {
+    height: 100%;
+  }
+
+  button.item-ios:not([detail-none]) .item-inner {
+    background-image: url("assets/image/arrowDown.png");
+    background-size: 25px 25px;
+  }
+
+  .label-ios {
+    margin: 11px 8px 5px 0px;
+  }
+
+  .searchbar-ios .searchbar-input {
+    padding: 0 28px;
+    border-radius: 5px;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .searchbar-ios .searchbar-search-icon {
+    left: 9px;
+    top: 9px;
+    background-image: none;
+    margin-left: calc(50% - 60px);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 13px;
+  }
+
+  .button-ios.activated {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .cached-arrow {
+    right: 0px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    color: #7d7aee;
+    pointer-events: none;
+  }
+
+  .cached-arrow-position {
+    top: 13px;
+    position: relative;
+    width: 12px;
+    height: 18px;
+  }
+
+  .grid {
+    padding: 0;
+  }
+
+  .user-sort {
+    max-width: none;
+    width: 100%;
+  }
+
+  .super-view {
+    height: 100%;
+  }
+
+  .scroll-content {
+    padding: 0px !important;
+  }
+
+  .item-md {
+    padding-left: 0px;
+  }
+
+  .grid {
+    height: 100%;
+  }
+
+  .content-header {
+    height: 8%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px #979797 solid;
+  }
+
+  .content-content {
+    height: 86%;
+    border-bottom: 1px #979797 solid;
+  }
+
+  .content-footer {
+    font-size: 16px;
+    height: 6%;
+    text-align: right;
+    align-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+
+  [col-6] {
+    padding-top: 11px !important;
+  }
+
+  .text-input-ios {
+    margin: 5px 8px 5px 0px;
+  }
+
+  .list-ios {
+    margin: -1px 0 0px;
+  }
+
+  .list-ios > .item-block:first-child {
+    border-top: 0px solid #c8c7cc;
+  }
+
+  .list-ios > .item-block:last-child,
+  .list-ios > .item-wrapper:last-child .item-block {
+    border-bottom: 0px solid #c8c7cc;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+
+  //-----------------------------------------------------------IPAD PRO 10.5 INCH-------------------------------------------------------
+  @media #{$ipad_pro_10-5} {
+    $width: 110px;
+
+    .image-avatar {
+      width: 115px;
+      height: 115px;
+      border: 2px solid #979797;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+    }
+
+    .h2-style {
+      font-size: 22px;
+      font-weight: 200;
+      height: 25%;
+    }
+
+    .custom-filter-button {
+      width: 100% !important;
+      font-size: 17px;
+      text-align: center;
+      color: #808080;
+    }
+  }
+  //-----------------------------------------------------------IPAD AIR 9.7 INCH-------------------------------------------------------
+  @media #{$ipad_9-7} {
+    $width: 96px;
+
+    .image-avatar {
+      width: 115px;
+      height: 115px;
+      border: 2px solid #979797;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+    }
+
+    .h2-style {
+      font-size: 20px;
+      font-weight: 200;
+      height: 25%;
+    }
+
+    .custom-filter-button {
+      width: 100% !important;
+      font-size: 15px;
+      text-align: center;
+      color: #808080;
+    }
+  }
+  //-----------------------------------------------------------IPAD PRO 12.9 INCH-------------------------------------------------------
+  @media #{$ipad_pro_12-9} {
+    $width: 128px;
+
+    .image-avatar {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #979797;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+    }
+
+    .h2-style {
+      font-size: 24px;
+      font-weight: bold;
+      height: 25%;
+    }
+
+    .custom-filter-button {
+      width: 100% !important;
+      font-size: 19px;
+      text-align: center;
+      color: #808080;
+    }
+  }
+  //--------------------------------------------------------------------------------------------------------------------------------
+  .h2-style {
+    overflow: hidden;
+    display: block;
+    white-space: normal;
+    color: #808080;
+  }
+
+  .item-md h2 {
+    margin-top: 2px !important;
+  }
+
+  .item-title {
+    height: 32%;
+  }
+
+  .item-content {
+    height: 75%;
+  }
+
+  .item-ios.item-block .item-inner {
+    padding-right: 0px;
+  }
+
+  .select-ios .select-placeholder {
+    color: #999;
+    text-align: center;
+  }
+
+  .custom-button-play {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 0px;
+  }
+
+  @mixin button_size($size) {
+    width: $size;
+    height: $size;
+    background-size: ($size - 5px) ($size - 5px) !important;
+  }
+
+  .full-row {
+    width: 100%;
+    height: 100%;
+  }
+
+  .full-size {
+    width: 100%;
+    height: 100%;
+  }
+
+  .item-content-devide {
+    height: 32%;
+    font-size: 20px;
+    color: #c1bfbf;
+  }
+
+  .item-content-sub {
+    height: 60%;
+    padding-top: 10px;
+  }
+
+  .item-sub-devide {
+    height: 49%;
+    font-size: 20px;
+    color: #c1bfbf;
+  }
+
+  .green-star-icon {
+    color: #74cb37;
+    font-size: 25px;
+    height: 100%;
+  }
+
+  .scroll-content {
+    overflow-y: unset;
+  }
+
+  .item-menu-center {
+    text-align: center;
+    border-radius: 24px;
+    background-color: #e7e7e7;
+    border: 3px solid #c7c7c7;
+  }
+
+  .item-list {
+    border-bottom: 1px solid #c8c7cc;
+  }
+
+  .item-ios {
+    padding-left: 0px;
+  }
+
+  .margin-image {
+    text-align: center;
+    background-color: transparent;
+  }
+
+  .user-detail-button {
+    background-color: transparent !important;
+  }
+
+  .item-ios.item-block .item-inner {
+    border-bottom: 0px;
+  }
+
+  .item-md.item-block .item-inner {
+    border-bottom: 0px;
+  }
+
+  .select-md .select-icon .select-icon-inner {
+    margin-top: -7px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 17px solid;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    color: #7d7aee;
+  }
+
+  .select-ios .select-icon .select-icon-inner {
+    left: 0px;
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    color: #7d7aee;
+    pointer-events: none;
+  }
+
+  .select-ios {
+    padding: 11px 23px 11px 16px;
+  }
+
+  .popover-md {
+    position: absolute;
+    top: 30px !important;
+    border-radius: 0px !important;
+  }
+
+  .popover-ios .popover-content {
+    border-radius: 0px !important;
+  }
+
+  .ion-position {
+    top: 30px !important;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+
+  .footer {
+    padding: 0 auto;
+  }
+
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background: lightseagreen;
+    position: relative;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top: 20px;
+  }
+
+  .hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid lightseagreen;
+  }
+
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid lightseagreen;
+  }
+}

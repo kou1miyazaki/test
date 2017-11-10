@@ -1,0 +1,97 @@
+<!--
+  Generated template for the PlayListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content padding>
+    
+  <!--Header row-->
+
+  <ion-row class="content-header">
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverUserSortingOrder($event)" class="custom-filter-button">新着順<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverFilterBySeries($event)" class="custom-filter-button"><!--サウンドパネル-->{{labelSeries}}<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+      <ion-row align-items-start>
+        <button ion-item (click)="presentPopoverFilterByLanguage($event)" class="custom-filter-button"><!--かなでる-->{{labelTag1}}<span class="cached-arrow"></span></button>
+      </ion-row>
+    </ion-col>
+    <ion-col>
+        <ion-searchbar placeholder="検索" class="item-search-menu-center" (ionInput)="getItems($event) "></ion-searchbar>
+    </ion-col>
+  </ion-row>
+
+  <!--Cached line-->
+  <p class="content-line"></p>
+
+  <!--Content row-->
+  <ion-row class="content-content">
+    <ion-content>
+      <ion-list>
+
+        <!--First item-->
+        <button ion-item class="item-list" (click)="contentsCommentaryPage()" *ngFor="let img of arraySearch">
+          <!--First item detail-->
+          <ion-row class="custom-row" >
+            <ion-col col-2 class="margin-image">
+              <!--Image-->
+              <img class="image-avatar"  src="{{img.FileUrl}}"/>
+            </ion-col>
+            <ion-col col-6>
+              <!--Title-->
+              <div class="item-title">
+                <h2 class="h2-style"><b>{{img.ContentName}}</b></h2>
+              </div>
+              <!--Seperate-->
+              <div class="item-seperate"></div>
+              <!--Content-->
+              <div class="item-content">
+                <p class="item-content-devide">デイリーライフ</p>
+                <p class="item-content-devide-2">思い出の写真</p>
+                <p class="item-content-devide-special">かなでる、きそう、えがく</p>
+              </div>
+            </ion-col>
+            <ion-col col-4>
+              <!--Detail-->
+              <!--Array of star-->
+              <div class="item-title">
+                <ion-icon name="star" class="green-star-icon"></ion-icon>
+                <ion-icon name="star" class="green-star-icon"></ion-icon>
+                <ion-icon name="star" class="green-star-icon"></ion-icon>
+              </div>
+              <!--Seperate-->
+              <div class="item-seperate"></div>
+              <!--Sub detail 1-->
+              <div class="item-content">
+                <p class="item-content-devide">11/24(木)に使用</p>
+                <p class="item-content-devide">全国プレイ数： 3,232</p>
+                <p class="item-content-devide">2017/09/07 更新</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </button>
+
+        <!--Second item-->
+       
+
+        <!--Third item-->
+       
+
+        <!--Fourth item-->
+       
+
+        <!--Fifth item-->
+      
+
+      </ion-list>
+    </ion-content>
+  </ion-row>  
+</ion-content>

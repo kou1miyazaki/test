@@ -1,0 +1,11 @@
+<!-- Generated template for the ContentsSortingOrderPopoverComponent component -->
+<div class="custom-userSortContent-popover">
+  <ion-list>
+    <ion-item class="title-item">キャンセル</ion-item>
+    <!-- <ion-item id=1 (click)="goToDetails(item)">新着順</ion-item> -->
+    <ion-item *ngFor = "let item of arrayOfText" (click)="goToDetails(item)">{{item}}</ion-item>
+    <!-- <ion-item  >人気順</ion-item>
+    <ion-item  >レベル順</ion-item> -->
+  </ion-list>
+</div>
+ 

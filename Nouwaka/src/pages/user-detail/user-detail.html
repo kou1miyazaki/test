@@ -1,0 +1,234 @@
+<!--
+Generated template for the UserDetailPage page.
+
+See http://ionicframework.com/docs/components/#navigation for more info on
+Ionic pages and navigation.
+-->
+<ion-header style="background-color: #89BA2A">
+  <ion-navbar transparent>
+    <ion-row class="row-header">
+      <ion-col col-4></ion-col>
+      <ion-col col-5>
+        <ion-row class="row-header">
+          <!--Calendar-->
+          <ion-col col-6>
+            <button ion-button icon-end class="calendar-button">
+              2017/12/01 ~ 2017/12/20
+              <ion-icon name="md-calendar"></ion-icon>
+            </button>
+          </ion-col>
+          <!--Drop box-->
+          <ion-col col-6 class="full-height-toolbar">
+            <ion-item>
+              <ion-select interface="popover" class="user-sort" placeholder="すべてのイベント">
+                <ion-option selected>すべてのイベント</ion-option>
+                <ion-option>トレーニング </ion-option>
+                <ion-option>脳若チャレンジ</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <!--Search-->
+      <ion-col col-3>
+        <ion-input type="text" placeholder="検索" class="item-menu-center"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-row class="full-row-size">
+    <!--Avatar + Info-->
+    <ion-col col-3>
+      <!--Avatar-->
+      <ion-row class="avatar-row" align-items-center justify-content-center>
+        <div class="circle-avatar"></div>
+      </ion-row>
+      <!--Info-->
+      <ion-row class="info-content-row">
+        <!--Info: Content-->
+        <div class="info-height">
+          <div class="user-info">
+            <div class="user-name">脳若太郎</div>
+            <div class="user-name-other">（のうわかたろう）</div>
+          </div>
+          <div class="user-other-info">
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>生年月日: 2017年12月1日</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>年齢・性別：74</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>所属：Info 3</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>担当：Info 4</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>初回登録日：Info 5</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>情報更録日： Info 6</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>レベル：Info 7</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>トレーニングスコア：Info 8</ion-col></ion-row></div>
+            <div class="user-other-detail"><ion-row align-items-start class="item-row"><ion-col>チャレンジスコア：Info 9</ion-col></ion-row></div>
+          </div>
+        </div>
+        <!--Info: PDF Report-->
+        <div class="pdf-height">
+          <ion-row justify-content-center>
+            <button ion-button class="pdf-button">PDFレポート出力 </button>
+          </ion-row>
+        </div>
+      </ion-row>
+
+    </ion-col>
+    <!--Content-->
+    <ion-col col-9>
+      <ion-content>
+        <ion-list>
+          <!--Item-->
+          <ion-item>
+            <!--Date-->
+            <ion-row class="zero-margin-top">
+              <ion-col col-4></ion-col>
+              <ion-col col-4><ion-title class="date-time-style" style="color: white">2017年12月1日(金)</ion-title></ion-col>
+              <ion-col col-4></ion-col>
+            </ion-row>
+            <!--Type 1-->
+            <ion-row class="gray-square-bound">
+              <ion-col col-1></ion-col>
+              <ion-col col-8 class="gray-square-box">
+                <ion-row class="full-row-size">
+                  <!--Avatar-->
+                  <ion-col col-3>
+                    <ion-row align-items-center justify-content-center class="full-row-size">
+                      <div class="avatar-gray-square"></div>
+                    </ion-row>
+                  </ion-col>
+                  <!--Content-->
+                  <ion-col col-7>
+                    <div class="title-item-padding-top" style="color: gray">ナンバー24</div>
+                    <div class="title-item-padding-top-after" style="color: gray">（インタラクション）</div>
+                  </ion-col>
+                  <!--Point-->
+                  <ion-col col-2>
+                    <ion-row align-items-center justify-content-start class="full-row-size">
+                      <div class="score">7 9</div>
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-3>
+                <ion-row class="full-row-size">
+                  <!--Time-->
+                  <ion-col col-4>
+                    <ion-row class="full-row-size">
+                      <ion-row class="cached-push-title"></ion-row>
+                      <ion-row class="time-margin">
+                        <p class="time-style">14:32</p>
+                      </ion-row>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col col-8></ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+
+            <!--Type 2-->
+            <ion-row class="gray-square-bound">
+              <ion-col col-1></ion-col>
+              <ion-col col-8 class="gray-square-box">
+                <ion-row class="full-row-size">
+                  <!--Avatar-->
+                  <ion-col col-3>
+                    <ion-row align-items-center justify-content-center class="full-row-size">
+                      <div class="hexagon"></div>
+                    </ion-row>
+                  </ion-col>
+                  <!--Content-->
+                  <ion-col col-7>
+                    <ion-row class="full-row-size">
+                      <!--Column 1-->
+                      <ion-col col-6>
+                        <ion-row class="full-row-size">
+                          <!--Title-->
+                          <ion-col col-7>
+                            <ion-row class="type2-title-row"><p class="type2-title">即時想起</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">末当識</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">知覚</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">前頭葉機能</p></ion-row>
+                          </ion-col>
+                          <!--:-->
+                          <ion-col col-1>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                          </ion-col>
+                          <!--Value-->
+                          <ion-col col-3>
+                            <ion-row class="type2-title-row"><p class="type2-value">1 8</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value">8</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value">1 2</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value">3</p></ion-row>
+                          </ion-col>
+                          <!--Cached-->
+                          <ion-col col-1></ion-col>
+                        </ion-row>
+                      </ion-col>
+                      <!--Column 2-->
+                      <ion-col col-6>
+                        <ion-row class="full-row-size">
+                          <!--Title-->
+                          <ion-col col-7>
+                            <ion-row class="type2-title-row"><p class="type2-title">計算</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">図形把握</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">遅延再生</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title"></p></ion-row>
+                          </ion-col>
+                          <!--:-->
+                          <ion-col col-1>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title">:</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-title"></p></ion-row>
+                          </ion-col>
+                          <!--Value-->
+                          <ion-col col-3>
+                            <ion-row class="type2-title-row"><p class="type2-value">9</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value">8</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value">1 2</p></ion-row>
+                            <ion-row class="type2-title-row"><p class="type2-value"></p></ion-row>
+                          </ion-col>
+                          <!--Cached-->
+                          <ion-col col-1></ion-col>
+                        </ion-row>
+                      </ion-col>
+                    </ion-row>
+                  </ion-col>
+                  <!--Point-->
+                  <ion-col col-2>
+                    <ion-row align-items-center justify-content-start class="full-row-size">
+                      <div class="score">7 0</div>
+                    </ion-row>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+              <ion-col col-3>
+                <ion-row class="full-row-size">
+                  <!--Time-->
+                  <ion-col col-4>
+                    <ion-row class="full-row-size">
+                      <ion-row class="cached-push-title"></ion-row>
+                      <ion-row class="time-margin">
+                        <p class="time-style">14:34</p>
+                      </ion-row>
+                    </ion-row>
+                  </ion-col>
+                  <ion-col col-8></ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-col>
+  </ion-row>
+</ion-content>
+<ion-footer style="background-color: #e8e8e8">
+  <ion-toolbar transparent>
+    <button ion-button class="footer-button">ひと更新</button>
+    <button ion-button class="footer-button">ひと削除</button>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,22 @@
+deleting-user-registration-popover {
+  
+}
+
+.custom-popover {
+  width: 500px !important;
+  background-color: white;
+}
+
+.custom-popover .popover-content {
+  width: 500px;
+  background-color: white;
+}
+
+.popover-ios .popover-content {
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  max-height: 90%;
+  color: #000;
+  background-color: transparent;
+}

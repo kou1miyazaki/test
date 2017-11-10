@@ -1,0 +1,135 @@
+walkthrough-page {
+
+    ion-content {
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        overflow-y: unset !important;
+    }
+
+    ion-grid {
+        height: 7.5%;      
+        background-color: transparent;        
+        justify-content: center;        
+    }
+ 
+    ion-slides{
+        position: relative;
+        height: 85%;
+        background-color: white;
+        float: left;
+        text-align: center; 
+    }
+    
+    .content-ios {
+        color: #000;
+        background-color: transparent;
+    }
+   
+    $slide-button-size: 100px;
+    .next-btn {
+        width: $slide-button-size;
+        height: $slide-button-size;
+        float: right;
+    }
+
+    .pre-btn {
+        width: $slide-button-size;
+        height: $slide-button-size;
+        float: left;
+        margin-left: 15px;
+    }
+  
+    .slide-btn-wrapper {
+        top: 40%;        
+        width: 100%;
+        left: 0px;
+        background-color: transparent;          
+        padding: 4px; 
+        position: absolute;
+        z-index: 1000;              
+    }
+
+    $top-div-height:7.5%;
+    .right {
+        position: relative;
+        height: $top-div-height; 
+        background-color: transparent;
+        display: inline-flex;
+        float: right;
+    }
+
+    .top-div {
+        position: relative;
+        width: 100%;
+        height: $top-div-height;
+        background-color:transparent;
+    }
+
+    $ipad: "(height: 768px)";
+    $ipad_pro: "(height: 1024px)";
+
+    @media #{$ipad}{
+        $indicator-circle-size:28px;
+        .circle {
+            position: relative;
+            width: $indicator-circle-size;
+            height: $indicator-circle-size;
+            background-color: transparent;
+            border: 3px solid white;  
+            border-radius: 50%;        
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+        $close-icon-size: 47px;
+        .close-icon {
+            position: relative;        
+            width: $close-icon-size;
+            height: $close-icon-size;
+            box-sizing: border-box;
+        }
+
+        .close-label {
+            position: relative;        
+            color: white;
+            font-size: 30px;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+    }
+
+    @media #{$ipad_pro}{
+        $indicator-circle-size: 40px;
+        .circle {
+            position: relative;
+            width: $indicator-circle-size;
+            height: $indicator-circle-size;
+            top:0px;        
+            background-color: transparent;
+            border: 3px solid white;  
+            border-radius: 50%;        
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+        }
+
+        $close-icon-size: 63px;
+        .close-icon {
+            position: relative;        
+            width: $close-icon-size;
+            height: $close-icon-size;
+            box-sizing: border-box;
+        }
+
+        .close-label {
+            position: relative;        
+            color: white;
+            font-size: 40px;
+            margin-right: 10px;
+            margin-top: 9px;
+        }
+    }
+
+       
+
+}   

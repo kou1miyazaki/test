@@ -1,0 +1,283 @@
+page-play-list {
+  .content-show {
+    height: 100%;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+
+  .grid {
+    padding: 0;
+  }
+
+  .play-sort {
+    max-width: 130%;
+    width: 130%;
+  }
+
+  .label-md {
+  }
+
+  .label-ios {
+    margin: 11px 8px 5px 10px;
+  }
+
+  .super-view {
+    height: 100%;
+  }
+
+  .scroll-content {
+    padding-left: 10px !important;
+    padding-top: 0px !important;
+  }
+
+  .item-md {
+    padding-left: 0px;
+  }
+
+  .grid {
+    height: 100%;
+  }
+
+  .content-header {
+    height: 8%;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .content-content {
+    height: 90%;
+  }
+
+  .content-line {
+    border-bottom: 3px solid #dedede;
+    left: 11px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .image-avatar {
+    border: 2px solid #979797;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+  }
+
+  .item-md h2 {
+    margin-top: 2px !important;
+  }
+
+  .item-title {
+    height: 30%;
+  }
+
+  .h2-style {
+    font-size: 21px;
+    color: #808080;
+  }
+
+  .item-seperate {
+    height: 0%;
+  }
+
+  .item-content {
+    height: 70%;
+  }
+
+  .item-content-devide {
+    height: 33%;
+    font-size: 17px;
+    color: #c1bfbf;
+  }
+
+  .item-content-devide-2 {
+    height: 33%;
+    font-size: 17px;
+    color: #c1bfbf;
+    padding-left: 20px;
+  }
+
+  .item-content-devide-special {
+    height: 33%;
+    font-size: 17px;
+    color: #89BA2A;
+  }
+
+  .green-star-icon {
+    color: #74cb37;
+  }
+
+  .scroll-content {
+    overflow-y: unset;
+  }
+
+  .item-search-menu-center {
+    border-radius: 24px;
+    background-color: #e7e7e7;
+    border: 3px solid #c7c7c7;
+  }
+
+  .searchbar-ios .searchbar-input {
+    padding: 0 28px;
+    border-radius: 5px;
+    height: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    background-color: transparent;
+  }
+
+  .searchbar-ios .searchbar-search-icon {
+    left: 9px;
+    top: 9px;
+    background-image: none;
+    margin-left: calc(50% - 60px);
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-size: 13px;
+  }
+
+
+  .text-input-ios {
+    text-align: center;
+    margin: 7px 3px 7px 0px;
+  }
+
+  .item-list {
+    padding-bottom: 0px;
+    padding-top: 10px;
+    border-bottom: 1px solid #c8c7cc;
+  }
+
+  .cached-arrow {
+    right: 0px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    color: #7d7aee;
+    pointer-events: none;
+  }
+
+  .select-ios {
+    padding: 11px 23px 11px 40px !important;
+  }
+
+  .custom-filter-button {
+    width: 100% !important;
+    font-size: 17px;
+    text-align: center;
+    color: #808080;
+  }
+
+  @media #{$ipad_pro_12-9} {
+    .custom-row {
+      min-height: 110px;
+    }
+
+    .select-text {
+      padding-left: 15px;
+    }
+  }
+
+  @media #{$ipad_pro_10-5} {
+    .custom-row {
+      min-height: 110px;
+    }
+
+    .select-text {
+      padding-left: 0px;
+    }
+  }
+
+  @media #{$ipad_9-7} {
+    .custom-row {
+      min-height: 110px;
+    }
+
+    .select-text {
+      padding-left: 0px;
+    }
+  }
+
+
+  .item-ios {
+    padding-left: 0px;
+  }
+
+  .margin-image {
+    padding-left: 0px;
+  }
+
+  .item-ios.item-block .item-inner {
+    border-bottom: 0px;
+  }
+
+  .item-md.item-block .item-inner {
+    border-bottom: 0px;
+  }
+
+  .select-md .select-icon .select-icon-inner {
+    margin-top: -7px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 17px solid;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    color: #7d7aee;
+  }
+
+  .select-ios .select-icon .select-icon-inner {
+    left: 0px;
+    top: 50%;
+    margin-top: -10px;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 22px solid;
+    border-right: 10px solid transparent;
+    border-left: 12px solid transparent;
+    color: #7d7aee;
+    pointer-events: none;
+  }
+
+  .popover-md {
+    position: absolute;
+    top: 30px !important;
+    border-radius: 0px !important;
+  }
+
+  .ion-position {
+    top: 30px !important;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    text-align: center;
+  }
+
+  .item-ios[detail-push] .item-inner,
+  button.item-ios:not([detail-none]) .item-inner,
+  a.item-ios:not([detail-none]) .item-inner {
+    background-image: none;
+    padding-right: 0px;
+  }
+}

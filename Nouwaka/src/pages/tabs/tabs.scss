@@ -1,0 +1,235 @@
+ion-app.ios [padding] {
+  background-color: white !important;
+}
+
+page-tabs {
+  @mixin button_size($size) {
+    width: $size;
+    height: $size;
+    background-size: ($size - 5px) ($size - 5px) !important;
+  }
+
+  .row-global, .col-tabbar {
+    height: 100%;
+  }
+
+  .scroll-content {
+    overflow-y: unset !important;
+  }
+
+  .setting_title_img {
+    margin-left: 30%;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+  //--------------------------------------------------------------IPAD 9.7 INCH-------------------------------------------------------------
+  @media #{$ipad_9-7} {
+    $width: 96px;
+
+    .title_img {
+      width: 44.25px;
+      height: 135px;
+    }
+
+    .left_button {
+      position: absolute;
+      left: -$width;
+      @include button_size($width*1.9);
+    }
+
+    .left_button_top, .left_button_mid, .right_button_none {
+      //background: url("../assets/image/NowakaButton/none_button.png") no-repeat center;
+      background-color: white;
+      border: 8px solid #979797;
+      border-radius: 50%;
+    }
+
+    .left_button_top {
+      top: $width + 5px;
+    }
+
+    .left_button_mid {
+      top: $width*3.02;
+    }
+
+    .left_button_bot {
+      top: $width*5;
+      z-index: 10;
+    }
+
+    .left_button_bot {
+      //background: url("../assets/image/NowakaButton/activeSpecial_button.png") no-repeat center;
+      background-color: #2D2D2D;
+      border-radius: 50%;
+    }
+
+    .right_button {
+      position: absolute;
+      left: $width/2 +17px;
+      @include button_size($width*1.9);
+    }
+
+    .right_button_chatmode, .right_button_playlist, .right_button_userlist {
+      //background: url("../assets/image/NowakaButton/deactive_button.png") no-repeat center;
+      background-color: #979797;
+      border-radius: 50%;
+    }
+
+    .right_button_chatmode {
+      top: 10px;
+    }
+
+    .right_button_playlist {
+      top: $width*2 + 5px;
+    }
+
+    .right_button_userlist {
+      top: $width*4;
+    }
+
+    .right_button_none {
+      top: $width*6 - 5px;
+    }
+  }
+  //-----------------------------------------------------------IPAD PRO 10.5 INCH-------------------------------------------------------
+  @media #{$ipad_pro_10-5} {
+    $width: 110px;
+
+    .title_img {
+      width: 44.25px;
+      height: 135px;
+    }
+
+    .left_button {
+      position: absolute;
+      left: -$width;
+      @include button_size($width*1.9);
+    }
+
+    .left_button_top, .left_button_mid, .right_button_none {
+      //background: url("../assets/image/NowakaButton/none_button.png") no-repeat center;
+      background-color: white;
+      border: 8px solid #979797;
+      border-radius: 50%;
+    }
+
+    .left_button_top {
+      top: $width;
+    }
+
+    .left_button_mid {
+      top: $width*3;
+    }
+
+    .left_button_bot {
+      top: $width*5;
+      z-index: 10;
+    }
+
+    .left_button_bot {
+      //background: url("../assets/image/NowakaButton/activeSpecial_button.png") no-repeat center;
+      background-color: #2D2D2D;
+      border-radius: 50%;
+    }
+
+    .right_button {
+      position: absolute;
+      left: $width/2;
+      @include button_size($width*1.9);
+    }
+
+    .right_button_chatmode, .right_button_playlist, .right_button_userlist {
+      //background: url("../assets/image/NowakaButton/deactive_button.png") no-repeat center;
+      background-color: #979797;
+      border-radius: 50%;
+    }
+
+    .right_button_chatmode {
+      top: 10px;
+    }
+
+    .right_button_playlist {
+      top: $width*2;
+    }
+
+    .right_button_userlist {
+      top: $width*4;
+    }
+
+    .right_button_none {
+      top: $width*6; 
+    }
+  }
+  //-----------------------------------------------------------IPAD PRO 12.9 INCH-------------------------------------------------------
+  @media #{$ipad_pro_12-9} {
+
+    $width: 128px;
+
+    .title_img {
+      width: 59px;
+      height: 180px;
+    }
+
+    .left_button {
+      position: absolute;
+      left: -$width;
+      @include button_size($width*1.9);
+    }
+
+    .left_button_top, .left_button_mid, .right_button_none {
+      //background: url("../assets/image/NowakaButton/none_button.png") no-repeat center;
+      background-color: white;
+      border: 8px solid #979797;
+      border-radius: 50%;
+    }
+
+    .left_button_top {
+      top: $width + 5px;
+    }
+
+    .left_button_mid {
+      top: $width*3;
+    } 
+
+    .left_button_bot {
+      top: $width*5;
+    }
+
+    .left_button_bot {
+      //background: url("../assets/image/NowakaButton/activeSpecial_button.png") no-repeat center;
+      background-color: #2D2D2D;
+      border-radius: 50%;
+    }
+
+    .right_button {
+      position: absolute;
+      left: $width/2 + 22px;
+      @include button_size($width*1.9);
+    }
+
+    .right_button_chatmode, .right_button_playlist, .right_button_userlist {
+      //background: url("../assets/image/NowakaButton/deactive_button.png") no-repeat center;
+      background-color: #979797;
+      border-radius: 50%;
+    }
+
+    .right_button_chatmode {
+      top: 10px;
+    }
+
+    .right_button_playlist {
+      top: $width * 2 + 3px;
+    }
+
+    .right_button_userlist {
+      top: $width * 4;
+    }
+
+    .right_button_none {
+      top: $width*6 - 5px;
+    }
+  }
+  //----------------------------------------------------------------------------------------------------------------------------------
+}

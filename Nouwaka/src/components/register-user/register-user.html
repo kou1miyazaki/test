@@ -1,0 +1,166 @@
+<!-- Generated template for the RegisterUserComponent component -->
+<ion-header>
+    
+      <ion-navbar>
+    
+        <ion-title style="text-align:center;background-color:greenyellow"><p style="color:white">ひと登録</p></ion-title>
+    
+      </ion-navbar>
+    
+    </ion-header>
+
+    <ion-content style="margin-top:10px">
+      <ion-row > 
+      <ion-col col-5 style="text-align:center">
+        <ion-img [src]="Image" style="margin-top:20px" width="90%" height="90%"></ion-img>
+        <button (tap)="takePicfromLibrary()" ion-button color="light" class="btn">Light</button>
+        <button (tap)="takePicfromCamera()" ion-button color="light" class="btn">Light</button>
+      </ion-col>
+    <ion-col col-7 >
+      <ion-row > 
+        <!-- label -->
+        <ion-col col-2  >
+          <ion-label>氏名</ion-label>
+      </ion-col>
+      <!-- textfield -->
+      <ion-col  col-10  class="textfield">
+          <ion-input class="input" placeholder="Text Input"></ion-input>
+          </ion-col>
+      </ion-row>
+
+      <ion-row > 
+          <!-- label -->
+          <ion-col col-2  >
+            <ion-label>かな</ion-label>
+        </ion-col>
+        <!-- textfield -->
+        <ion-col  col-10  class="textfield">
+            <ion-input class="input" placeholder="Text Input"></ion-input>
+            </ion-col>
+        </ion-row>
+
+        <ion-row > 
+            <!-- label -->
+            <ion-col col-2  >
+              <ion-label>生年月日</ion-label>
+          </ion-col>
+          <!-- textfield -->
+          <ion-col  col-10  class="textfield">
+             <ion-row>
+               <ion-col >
+                  <ion-item>
+                      <ion-select interface="popover" class="combobox">
+                          <ion-option>五十音順</ion-option>
+                          <ion-option>スコア順</ion-option>
+                          <ion-option>プレイ日順</ion-option>
+                      </ion-select>
+                    </ion-item>
+               </ion-col>
+               <ion-col >
+                  <ion-item>
+                      <ion-select interface="popover" class="combobox" >
+                          <ion-option>1月</ion-option>
+                          <ion-option>2月</ion-option>
+                          <ion-option>3月</ion-option>
+                          <ion-option>4月</ion-option>
+                          <ion-option>5月</ion-option>
+                          <ion-option>6月</ion-option>
+                          <ion-option>7月</ion-option>
+                          <ion-option>8月</ion-option>
+                          <ion-option>9月</ion-option>
+                          <ion-option>10月</ion-option>
+                          <ion-option>11月</ion-option>
+                          <ion-option>12月</ion-option>
+                      </ion-select>
+                    </ion-item>
+               </ion-col>
+               <ion-col  class="combobox">
+                  <ion-item>
+                      <ion-select interface="popover">
+                          <ion-option>五十音順</ion-option>
+                          <ion-option>スコア順</ion-option>
+                          <ion-option>プレイ日順</ion-option>
+                      </ion-select>
+                    </ion-item>
+               </ion-col>
+             </ion-row>
+            </ion-col>
+
+          </ion-row>
+
+          <ion-row > 
+              <!-- label -->
+              <ion-col col-2  >
+                <ion-label>性別</ion-label>
+            </ion-col>
+            <!-- textfield -->
+            <ion-col  col-10  >
+                <ion-item>
+                    <ion-select interface="popover" class="combobox"  placeholder="利用者ソートリスト">
+                      <ion-option>男性</ion-option>
+                      <ion-option>女性</ion-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-col>
+            </ion-row>
+
+            <ion-row > 
+                <!-- label -->
+                <ion-col col-2  >
+                  <ion-label>所属</ion-label>
+              </ion-col>
+              <!-- textfield -->
+              <ion-col  col-10  >
+                  <ion-item>
+                      <ion-select interface="popover" class="combobox" placeholder="利用者ソートリスト">
+                          <ion-option>五十音順</ion-option>
+                          <ion-option>スコア順</ion-option>
+                          <ion-option>プレイ日順</ion-option>
+                      </ion-select>
+                    </ion-item>
+                  </ion-col>
+              </ion-row>
+
+              <ion-row > 
+                  <!-- label -->
+                  <ion-col col-2  >
+                    <ion-label>担当</ion-label>
+                </ion-col>
+                <!-- textfield -->
+                <ion-col  col-10  >
+                    <ion-item>
+                        <ion-select interface="popover" class="combobox" placeholder="利用者ソートリスト">
+                          <ion-option>五十音順</ion-option>
+                          <ion-option>スコア順</ion-option>
+                          <ion-option>プレイ日順</ion-option>
+                        </ion-select>
+                      </ion-item>
+                    </ion-col>
+                </ion-row>
+
+                <ion-row > 
+                    <!-- label -->
+                    <ion-col col-2  >
+                      <ion-label>レベル</ion-label>
+                  </ion-col>
+                  <!-- textfield -->
+                  <ion-col  col-10  >
+                      <ion-item>
+                          <ion-select interface="popover" class="combobox" placeholder="利用者ソートリスト">
+                            <ion-option>❤</ion-option>
+                            <ion-option>❤❤</ion-option>
+                            <ion-option>❤❤❤</ion-option>
+                          </ion-select>
+                        </ion-item>
+                      </ion-col>
+                  </ion-row>
+      
+    </ion-col>
+   </ion-row>
+
+
+
+      </ion-content>
+      <ion-footer>
+          <button ion-button style="width:100%;height:40px">Default</button>
+      </ion-footer>    

@@ -1,0 +1,205 @@
+page-login {
+  .list-ios[inset] .item {
+    border-bottom: 0px solid #c8c7cc;
+  }
+
+  .title-padding {
+    text-align: right;
+    width: 150px;
+    padding-right: 20px;
+  }
+
+  .normal-a {
+    color: black;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .button-password {
+    background-color: transparent;
+    color: dodgerblue;
+  }
+
+  .main-content {
+    overflow-y: unset !important;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    vertical-align: middle;
+  }
+
+  .hide-show-content-box {
+    position: relative;
+    width: 100%;
+    height: 10px;
+  }
+
+  .login-logo {
+    width: 53%;
+    margin-top: 20%;
+  }
+
+  .input-wrapper {
+    margin-top: 11px;
+  }
+
+  ion-item {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100%;
+  }
+  // .ng-valid[required], .ng-valid.required  {
+  //   border-left: 2px solid #42A948;
+  // }
+  // .ng-invalid:not(form)  {
+  //   border-left: 2px solid #d13434;
+  // }
+  .hide-show-content-box {
+    width: 100%;
+    position: relative;
+    height: 10px;
+  }
+
+  .error-message {
+    color: #89BA2A;
+  }
+
+  .main-content {
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    overflow-y: unset !important;
+    vertical-align: middle;
+  }
+
+  .submit-button {
+    margin-top: 20px;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+
+  @media #{$ipad_9-7} {
+    .main-padding {
+      padding-left: 35px;
+    }
+
+    [col-7] {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 58.33333%;
+      -ms-flex: 0 0 58.33333%;
+      flex: 0 0 100%;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .input-border-email {
+      border: 1px solid #000;
+      margin-right: 205px;
+    }
+
+    .input-border-password {
+      border: 1px solid #000;
+      margin-right: 75px;
+      padding-right: 0px;
+    }
+
+    .item-ios [item-right],
+    .item-ios [item-end] {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: -60px;
+      margin-right: 74px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+      width: 150px;
+      height: 50px;
+    }
+  }
+
+  @media #{$ipad_pro_10-5} {
+    .main-padding {
+      padding-left: 35px;
+    }
+
+    [col-7] {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 58.33333%;
+      -ms-flex: 0 0 58.33333%;
+      flex: 0 0 100%;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .input-border-email {
+      border: 1px solid #000;
+      margin-right: 205px;
+    }
+
+    .input-border-password {
+      border: 1px solid #000;
+      margin-right: 75px;
+      padding-right: 0px;
+    }
+
+    .item-ios [item-right],
+    .item-ios [item-end] {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: -60px;
+      margin-right: 74px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+      width: 150px;
+      height: 50px;
+    }
+  }
+
+  @media #{$ipad_pro_12-9} {
+    .main-padding {
+      padding-left: 110px;
+    }
+
+    [col-7] {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 58.33333%;
+      -ms-flex: 0 0 58.33333%;
+      flex: 0 0 93%;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .input-border-email {
+      border: 1px solid #000;
+      margin-right: 205px;
+    }
+
+    .input-border-password {
+      border: 1px solid #000;
+      margin-right: 75px;
+      padding-right: 0px;
+    }
+
+    .item-ios [item-right],
+    .item-ios [item-end] {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: -60px;
+      margin-right: 73px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+      width: 170px;
+      height: 60px;
+    }
+  }
+}

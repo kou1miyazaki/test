@@ -1,0 +1,459 @@
+page-contents-commentary {
+  .back-button.show-back-button {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 30px;
+  }
+
+  .touch-bound {
+    color: white;
+    background-color: dimgray;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 40px;
+  }
+
+  .toolbar-title-ios {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #fff;
+    pointer-events: auto;
+  }
+
+  .guide-image-padding {
+    height: 60%;
+  }
+
+  .guide-image-show {
+    height: 40%;
+  }
+
+  .guide-image-setup {
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .image-touch {
+    height: 60%;
+  }
+
+  .title-touch {
+    height: 25%;
+  }
+
+  .padding-touch {
+    height: 15%;
+  }
+
+  .user-circle {
+    width: 16%;
+    height: 100%;
+    margin-left: 2px;
+  }
+
+  .popover-content {
+    width: 500px;
+  }
+
+  .user-default {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+  }
+
+  .user-set-cached-up {
+    width: 100%;
+    height: 45%;
+    background-color: transparent;
+  }
+
+  .user-set-cached-main {
+    width: 100%;
+    height: 30%;
+    z-index: 99;
+    background-color: transparent;
+  }
+
+  .user-set-cached-down {
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+  }
+
+  .button-ios.activated {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .user-name {
+    width: 90%;
+    height: 100%;
+    background-color: darkgray;
+    color: #FFFFFF;
+  }
+
+  .user-set {
+    width: 85%;
+    height: 85%;
+    z-index: 98;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: #b6b6b6;
+  }
+
+  .full-row-size {
+    height: 100%;
+    width: 100%;
+  }
+
+  .button-footer {
+    width: 20%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .clear-button {
+    background-color: transparent;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+  }
+
+  .toolbar-content-ios {
+    text-align: center;
+  }
+
+  .col {
+    padding: 0px;
+  }
+
+  [col-9] {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 75%;
+  }
+  //Sub row
+  .title-title-padding {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    background-color: #505050;
+    align-content: center;
+    align-items: center;
+  }
+
+  .title-content-padding {
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+
+  .auto-padding {
+    width: 5px;
+  }
+
+  .content-sub-full {
+    height: 100%;
+    border: 2px solid #979797;
+    border-radius: 6px;
+  }
+
+  .bar-button-default-ios,
+  .bar-button-default.bar-button-ios-default,
+  .bar-button-clear-ios-default {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .bar-button-default-md,
+  .bar-button-clear-md-default,
+  .bar-button-md-default {
+    color: #ffffff;
+    background-color: transparent;
+  }
+
+  .toolbar-background {
+    background-color: #89BA2A;
+  }
+
+  $ipad_9-7: "(height: 768px)";
+  $ipad_pro_10-5: "(height: 834px)";
+  $ipad_pro_12-9: "(height: 1024px)";
+
+  @media #{$ipad_9-7} {
+    .col-padding {
+      width: 45px;
+    }
+
+    .content-guide-row {
+      margin-left: 45px;
+      margin-right: 38px;
+      border: 3px solid #797979;
+      border-radius: 10px;
+      margin-top: 10px;
+      height: 315px;
+    }
+
+    .row-header {
+      min-height: 80px;
+    }
+    //Big row
+    .title-row {
+      height: 30%;
+      border: 2px solid #979797;
+      border-radius: 6px;
+    }
+    //Sub row
+    .content-sub-row {
+      height: 32%;
+      width: 100%;
+      padding-top: 5px;
+    }
+
+    .toolbar-ios {
+      min-height: 80px;
+    }
+
+    .toolbar-md {
+      min-height: 80px;
+    }
+
+    .product-avatar {
+      width: 235px;
+      height: 235px;
+      border-radius: 6px;
+    }
+
+    .title-title-margin {
+      margin: 11px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .title-content-margin {
+      margin: 11px;
+      text-align: center;
+      font-size: 30px;
+      color: #505050;
+    }
+
+    .content-title-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .content-content-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      color: #505050;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .content-row {
+      height: 70%;
+    }
+
+    .button-ios {
+      font-size: 24px;
+      height: 2.2em;
+    }
+  }
+
+  @media #{$ipad_pro_10-5} {
+    .col-padding {
+      width: 47px;
+    }
+
+    .content-guide-row {
+      margin-left: 47px;
+      margin-right: 40px;
+      border: 3px solid #797979;
+      border-radius: 10px;
+      margin-top: 10px;
+      height: 360px;
+    }
+
+    .row-header {
+      min-height: 90px;
+    }
+    //Big row
+    .title-row {
+      height: 30%;
+      border: 2px solid #979797;
+      border-radius: 6px;
+    }
+    //Sub row
+    .content-sub-row {
+      height: 32%;
+      width: 100%;
+      padding-top: 5px;
+    }
+
+    .toolbar-ios {
+      min-height: 90px;
+    }
+
+    .toolbar-md {
+      min-height: 90px;
+    }
+
+    .product-avatar {
+      width: 235px;
+      height: 235px;
+      border-radius: 6px;
+    }
+
+    .title-title-margin {
+      margin: 11px;
+      color: #fff;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .title-content-margin {
+      margin: 11px;
+      text-align: center;
+      font-size: 30px;
+      color: #505050;
+    }
+
+    .content-title-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .content-content-margin {
+      margin-top: 12px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+      color: #505050;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .content-row {
+      height: 70%;
+    }
+
+    .button-ios {
+      font-size: 26px;
+      height: 2.2em;
+    }
+  }
+
+  ion-app.ios [padding] {
+    padding: 16px;
+    background-color: #F5F5F5;
+  }
+
+  @media #{$ipad_pro_12-9} {
+    .col-padding {
+      width: 50px;
+    }
+
+    .content-guide-row {
+      margin-left: 50px;
+      margin-right: 60px;
+      border: 3px solid #797979;
+      border-radius: 10px;
+      margin-top: 10px;
+      height: 445px;
+    }
+
+    .row-header {
+      min-height: 100px;
+    }
+    //Big row
+    .title-row {
+      height: 30%;
+      border: 2px solid #979797;
+      border-radius: 6px;
+    }
+    //Sub row
+    .content-sub-row {
+      height: 32%;
+      width: 100%;
+      padding-top: 5px;
+    }
+
+    .toolbar-ios {
+      min-height: 100px;
+    }
+
+    .toolbar-md {
+      min-height: 100px;
+    }
+
+    .product-avatar {
+      width: 321px;
+      height: 321px;
+      border-radius: 6px;
+    }
+
+    .title-title-margin {
+      margin: 18px;
+      color: #fff;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    .title-content-margin {
+      margin: 18px;
+      text-align: center;
+      font-size: 35px;
+      color: #505050;
+    }
+
+    .content-title-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      color: #fff;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .content-content-margin {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-top: 12px;
+      margin-bottom: 0px;
+      color: #505050;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .content-row {
+      height: 70%;
+    }
+
+    .button-ios {
+      font-size: 28px;
+      height: 2.2em;
+    }
+  }
+}
