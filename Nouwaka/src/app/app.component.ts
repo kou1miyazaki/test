@@ -15,13 +15,9 @@ import { UserDetailPage } from '../pages/user-detail/user-detail';
   templateUrl: 'app.html'
 })
 export class MyApp {
-<<<<<<< .mine
-  rootPage: any ;
-||||||| .r246
-  rootPage: any = TabsPage;
-=======
+
   rootPage: any;
->>>>>>> .r253
+
 
   constructor(private nativeStorage: NativeStorage,platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     
@@ -43,8 +39,9 @@ export class MyApp {
           this.rootPage = LoginPage;
         } 
       );
-    });
+     });
   }
 }
+
 
 

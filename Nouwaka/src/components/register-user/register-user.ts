@@ -13,7 +13,7 @@ import {DomSanitizer} from '@angular/platform-browser';
   templateUrl: 'register-user.html'
 })
 export class RegisterUserComponent {
-
+  firstNameText: string;
   public Image : string;
   text: string;
 
@@ -50,5 +50,9 @@ export class RegisterUserComponent {
       }, (err) => {
       });
   }
+  isRegister(){
+  debugger;
+  console.log(this.firstNameText);
 
+}
 }

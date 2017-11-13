@@ -24,7 +24,7 @@
       </ion-col>
       <!-- textfield -->
       <ion-col  col-10  class="textfield">
-          <ion-input class="input" placeholder="Text Input"></ion-input>
+          <ion-input [(ngModel)]="firstNameText" class="input" placeholder="Text Input"></ion-input>
           </ion-col>
       </ion-row>
 
@@ -162,5 +162,5 @@
 
       </ion-content>
       <ion-footer>
-          <button ion-button style="width:100%;height:40px">Default</button>
+          <button ion-button style="width:100%;height:40px" (click)="isRegister()">Default</button>
       </ion-footer>    
